@@ -1,0 +1,25 @@
+{
+  "name": "mainlycodes",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Nathaniel Giron <nathaniel.giron@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/NathanielGiron/mainlycodes",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/vendor",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^2.2.4",
+    "toastr": "^2.1.2",
+    "angular": "^1.5.6",
+    "angular-resource": "^1.5.6",
+    "angular-route": "^1.5.6"
+  }
+}
