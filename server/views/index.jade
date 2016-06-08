@@ -1,6 +1,17 @@
 extends ../includes/layout
 
 block main-content
+	.navbar.navbar-default.navbar-fixed-top
+		.container
+			.navbar-header
+				a.navbar-brand(href="/") &lt; / &gt; MainlyCodes
+			.navbar-collapse.collapse
+				ul.nav.navbar-nav
+					li
+						a(href="/") Home
 	section.content
 		div(ng-view)
-	h2= mongoMessage
+		h2= mongoMessage
+
+	footer.container.text-center
+		p &copy; 2016 &lt; / &gt; MainlyCodes International Ltd.
