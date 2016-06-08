@@ -7,4 +7,19 @@ module.exports = function(config) {
 	db.once('open', function callback() {
 		console.log('mainlycodes db opened');
 	});
+
+	var userSchema = mongoose.Schema({
+		firstName: String,
+		lastName: String,
+		userName: String
+	});
+
+	var User = mongoose.model('User', userSchema);
+
+	User.find({}).exec(function(err, collection) {
+		if(collection.length === 0) {
+			User.create({firstName:'Nat', lastName:'Giron', userName:'nat'});
+			User.create({firstName:'Monte', lastName:'Hoover', userName:'monte'});
+		}
+	});
 }

@@ -7,17 +7,21 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "engines": {
-  	"node":"5.9.x",
-  	"npm":"3.7.x"
+    "node": "5.9.x",
+    "npm": "3.7.x"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.15.1",
+    "cookie-parser": "^1.4.3",
     "express": "^4.13.4",
+    "express-session": "^1.13.0",
     "jade": "^1.11.0",
     "mongoose": "^4.4.20",
     "morgan": "^1.7.0",
+    "passport": "^0.3.2",
+    "passport-local": "^1.0.0",
     "stylus": "^0.54.5"
   },
   "devDependencies": {
