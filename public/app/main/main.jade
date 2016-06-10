@@ -1,17 +1,72 @@
 div#twrap
 	.container.centered
 		.row
-			.col-lg-8.col-lg-offset-2
-				p
-					i(class="fa fa-code logo")
-				h1 MainlyCodes
-				h3 It's kinda like Netflix for Web Developers.
-				a(href="/signup").btn.btn-warning.btn-lg Register
+			p
+				i(class="fa fa-code logo")
+			h1 MainlyCodes
+			h3 It's kinda like Netflix for Web Developers.
+			a(href="/signup").btn.btn-warning.btn-lg Register
 
 .container
-	.row
-		.col-md-6
-			div(ng-include="'/partials/main/featured-courses'")
-		.col-md-6
-			div(ng-include="'/partials/main/new-courses'")
+	.row(align="center")
+		br
+		br
+		h3 Featured Courses
+		br
+		br
+		.col-md-3
+			img(src="app/main/imgs/sublime-text-mastery.jpg" class="img-thumbnail")
+			p Object-Oriented Bootcamp
+		.col-md-3
+			img(src="app/main/imgs/object-oriented-bootcamp.jpg" class="img-thumbnail")
+			p Sublime Text Mastery
+		.col-md-3
+			img(src="app/main/imgs/es6-cliffnotes-series.jpg" class="img-thumbnail")
+			p EcmaScript 6 Crash Course
+		.col-md-3
+			img(src="app/main/imgs/what-are-you-working-on.jpg" class="img-thumbnail")
+			p Whatcha Working On
+	br
+	br
+div#featured
+	.container.centered
+		.row(align="center")
+			p 
+				i(class="fa fa-comment-o")
+			p With MainlyCodes, not only will you learn the necessary skills for building modern web applications but you'll have fun doing it. Ever wished for someone to sit next to you, and explain that complicated concept you're struggling with?
 
+.container
+	.row(align="center")
+		br
+		br
+		h3 These folks think MainlyCodes is pretty dang cool.
+		br
+		br
+		.col-md-3.features
+			img(src="app/main/imgs/monte.jpg" class="img-circle img-thumbnail")
+			p 
+				strong Monte Hoover 
+				br
+				br
+				"MainlyCodes is insane!""
+		.col-md-3.features
+			img(src="app/main/imgs/monte.jpg" class="img-circle img-thumbnail")
+			p 
+				strong Monte Hoover 
+				br
+				br
+				"Probably the most "must-watch" web development screencasts on the internet."
+		.col-md-3.features
+			img(src="app/main/imgs/jacob.jpg" class="img-circle img-thumbnail")
+			p 
+				strong Jacob Barrus 
+				br
+				br
+				"Great resource by MainlyCodes to take my knowledge of NodeJS to the limits!"
+		.col-md-3.features
+			img(src="app/main/imgs/monte.jpg" class="img-circle img-thumbnail")
+			p 
+				strong Monte Hoover 
+				br
+				br
+				"MainlyCodes is the definitive resource for learning Javascript. Period."

@@ -1,0 +1,14 @@
+.container
+  h1 {{course.title}}
+  .row
+    .col-md-6
+      object(data="http://www.youtube.com/embed/RnqAXuLZlaE" width="560" height="315")
+
+    .col-md-6
+      .panel.panel-primary
+        .panel-heading Tags
+        .panel-body
+          div(ng-repeat="tag in course.tags") {{tag}}
+      h3(ng-show="course.featured") Featured
+      h3 Published on {{course.published | date}}
+  br
