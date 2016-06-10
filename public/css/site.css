@@ -23,6 +23,9 @@ footer p {
 .toast-top-right {
   top: 70px;
 }
+.margin-left-med {
+  margin-left: 10px;
+}
 .navbar-header .navbar-brand {
   color: #fff;
 }
